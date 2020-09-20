@@ -8,8 +8,6 @@ part 'language_store.g.dart';
 class LanguageStore = _LanguageStore with _$LanguageStore;
 
 abstract class _LanguageStore with Store {
-  static const String TAG = "LanguageStore";
-
   // repository instance
   final Repository _repository;
 
@@ -24,8 +22,7 @@ abstract class _LanguageStore with Store {
   ];
 
   // constructor:---------------------------------------------------------------
-  _LanguageStore(Repository repository)
-      : this._repository = repository {
+  _LanguageStore(Repository repository) : this._repository = repository {
     init();
   }
 
